@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="@color/main_background_blue"
+    >
+
+    <TextView
+        android:textAllCaps="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/title_main"
+        android:id="@+id/textView"
+        android:textColor="@color/main_title_orange"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp" />
+
+    <Button
+        style="@style/MainButtons"
+        android:text="@string/button_spotify"
+        android:id="@+id/button_spotify"
+        android:layout_below="@+id/textView"
+        android:onClick="sendMessage"  />
+
+
+    <Button
+        style="@style/MainButtons"
+        android:text="@string/button_scores"
+        android:id="@+id/button_scores"
+        android:layout_below="@+id/button_spotify"
+        android:onClick="sendMessage" />
+
+    <Button
+        style="@style/MainButtons"
+        android:text="@string/button_library"
+        android:id="@+id/button_library"
+        android:layout_below="@+id/button_scores"
+        android:onClick="sendMessage" />
+
+    <Button
+        style="@style/MainButtons"
+        android:text="@string/button_buildBigger"
+        android:id="@+id/button_buildBigger"
+        android:layout_below="@+id/button_library"
+        android:onClick="sendMessage" />
+
+    <Button
+        style="@style/MainButtons"
+        android:text="@string/button_xyzReader"
+        android:id="@+id/button_xyzReader"
+        android:layout_below="@+id/button_buildBigger"
+        android:onClick="sendMessage" />
+
+    <Button
+        style="@style/MainButtons"
+        android:text="@string/button_capstone"
+        android:id="@+id/button_capstone"
+        android:layout_below="@+id/button_xyzReader"
+        android:onClick="sendMessage" />
+
+</RelativeLayout>
